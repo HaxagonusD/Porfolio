@@ -1,55 +1,62 @@
 @import "../Constants.scss";
 
 .projectsPage {
-  
   @include sectionLayout();
-  
+  scroll-snap-align: start;
   .left {
-      
+    .project {
+      @include hoverable();
+      &:hover {
+        box-shadow: 0 8px 16px 0 rgba(144, 144, 144, 0.2);
+      }
+    }
     @include leftLayout();
     background-color: $darkBlue;
     .title {
-        grid-column: 3 / span 6;
-        grid-row: 2 / span 2;
-        font-size: 3.25rem;
-        align-self: start;
-        color: $white;
-        justify-content: start;
-        font-family: "Open Sans";
-      }
+      grid-column: 3 / span 6;
+      grid-row: 2 / span 2;
+      font-size: 3.25rem;
+      align-self: start;
+      color: $white;
+      justify-content: start;
+      font-family: "Open Sans";
+    }
     .project1 {
-        grid-column: 3 / span 7;
-        grid-row: 4 / span 3;
-        background-color: $white;
-      }
-      .project2 {
-        grid-column: 3 / span 7;
-        grid-row: 8 / span 3;
-        background-color: $white;
-      }
+      grid-column: 3 / span 7;
+      grid-row: 4 / span 3;
+      background-color: $white;
+    }
+    .project2 {
+      grid-column: 3 / span 7;
+      grid-row: 8 / span 3;
+      background-color: $white;
+    }
   }
   .right {
     @include rightLayout();
+
+    .project {
+      @include hoverable();
+    }
     background-color: $white;
     .navbar {
-        grid-column: 4 / span 6;
-        grid-row: 2 / span 1;
-        a {
-          color: $darkBlue;
-        }
+      grid-column: 4 / span 6;
+      grid-row: 2 / span 1;
+
+      a {
+        color: $darkBlue;
       }
-    
-      
-      .project3 {
-        grid-column: 3 / span 7;
-        grid-row: 4 / span 3;
-        background-color: $white;
-      }
-      .project4 {
-        grid-column: 3 / span 7;
-        grid-row: 8 / span 3;
-        background-color: $white;
-      }
+    }
+
+    .project3 {
+      grid-column: 3 / span 7;
+      grid-row: 4 / span 3;
+      background-color: $white;
+    }
+    .project4 {
+      grid-column: 3 / span 7;
+      grid-row: 8 / span 3;
+      background-color: $white;
+    }
   }
-  
 }

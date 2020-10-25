@@ -1,11 +1,11 @@
 import React from "react";
 import NavBar from "./NavBar";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import "./styles/About/About.css";
 
 const About = () => {
   return (
-    <div className="about">
+    <div id="about" className="about">
       <div className="left">
         <div className="logo">Hax</div>
         <div className="greeting">
@@ -13,7 +13,16 @@ const About = () => {
         </div>
         <div className="description">I'm a Full Stack Software Developer</div>
         <div className="contact">
-          <Link to="/contact">Contact me</Link>
+          <Link
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            to="contact"
+          >
+            Contact
+          </Link>
         </div>
       </div>
       <div className="right">

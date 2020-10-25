@@ -9,6 +9,7 @@
       grid-template-columns: repeat(12, 1fr 1rem);
   -ms-grid-rows: 2rem (1fr 1rem)[5] 1fr;
       grid-template-rows: 2rem repeat(5, 1fr 1rem) 1fr;
+  scroll-snap-align: start;
 }
 
 .projectsPage .left {
@@ -26,6 +27,21 @@
   -ms-grid-rows: 2rem (1fr 2rem)[6];
       grid-template-rows: 2rem repeat(6, 1fr 2rem);
   background-color: #1d3557;
+}
+
+.projectsPage .left .project {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.projectsPage .left .project:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.projectsPage .left .project:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(144, 144, 144, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(144, 144, 144, 0.2);
 }
 
 .projectsPage .left .title {
@@ -86,6 +102,16 @@
 .projectsPage .right a {
   color: #f1faee;
   text-decoration: none;
+}
+
+.projectsPage .right .project {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.projectsPage .right .project:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .projectsPage .right .navbar {

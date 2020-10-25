@@ -1,37 +1,14 @@
 //import libraries
 import React from "react";
-import { Switch, Route } from "react-router-dom";
-//importing custom components
-// import NavBar from "./components/NavBar";
-import ErrorComponent from "./components/ErrorComponent";
-import About from "./components/About";
-import ProjectsPage from "./components/ProjectsPage";
-import Contact from "./components/Contact";
-import NavBar from "./components/NavBar";
+
+import Container from "./components/Container";
 
 //importing css
 
 function App() {
   return (
     <div className="App">
-      
-      <About />
-      <ProjectsPage />
-      <Contact />
-      {/* <Switch>
-        <Route exact path="/">
-          
-        </Route>
-        <Route exact path="/projects">
-          
-        </Route>
-        <Route exact path="/contact">
-          
-        </Route>
-        <Route>
-          <ErrorComponent />
-        </Route>
-      </Switch> */}
+      <Container />
     </div>
   );
 }

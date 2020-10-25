@@ -40,5 +40,12 @@ $darkBlue: #1d3557;
 
 @mixin divider {
   width: 1rem;
-  background-color: $lightBlue;
+  background-color: $blue;
+}
+
+@mixin hoverable {
+    transition: 0.3s;
+    &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
 }

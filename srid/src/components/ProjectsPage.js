@@ -5,12 +5,12 @@ import "./styles/Projects/ProjectsPage.css";
 const ProjectsPage = () => {
   return (
     <div className="projectsPage">
-      <div className="left">
+      <div id="projects" className="left">
         <div className="title">My Projects</div>
-        <div className="project1">
+        <div className=" project project1">
           <Thumbnail />
         </div>
-        <div className="project2">
+        <div className="project project2">
           <Thumbnail />
         </div>
       </div>
@@ -19,10 +19,10 @@ const ProjectsPage = () => {
         <div className="navbar">
           <NavBar />
         </div>
-        <div className="project3">
+        <div className="project project3">
           <Thumbnail />
         </div>
-        <div className="project4">
+        <div className="project project4">
           <Thumbnail />
         </div>
       </div>
