@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap");
+.contactSection {
+  background-color: #f1faee;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2rem (1fr 1rem)[12];
+      grid-template-columns: 2rem repeat(12, 1fr 1rem);
+  -ms-grid-rows: (1fr 1rem)[6];
+      grid-template-rows: repeat(6, 1fr 1rem);
+}
+
+.contactSection .backdrop {
+  background-color: #e63946;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 7;
+  grid-row: 3 / span 7;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 19;
+  grid-column: 4 / span 19;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactSection .backdrop .containerLinks {
+  background-color: white;
+  height: 100%;
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactSection .backdrop .containerLinks .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.contactSection .backdrop .containerLinks .links a {
+  background-color: teal;
+  -webkit-text-emphasis: none;
+          text-emphasis: none;
+  width: 50%;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.contactSection .backdrop .containerLinks .links .github {
+  background-color: #242323;
+  color: white;
+}
+
+.contactSection .backdrop .containerLinks .links .linkedin {
+  background-color: #457b9d;
+  color: white;
+}
+
+.contactSection .backdrop .containerLinks .links .instagram {
+  background-color: #c13584;
+  color: white;
+}
+
+.contactSection .backdrop .divider {
+  height: 100%;
+  width: 1rem;
+  background-color: #a8dadc;
+}
+
+.contactSection .backdrop .formContainer {
+  display: -ms-grid;
+  display: grid;
+  background-color: #1d3557;
+  width: 66%;
+  -ms-grid-columns: (1fr 1rem)[12];
+      grid-template-columns: repeat(12, 1fr 1rem);
+  -ms-grid-rows: (1fr 1rem)[6];
+      grid-template-rows: repeat(6, 1fr 1rem);
+}
+
+.contactSection .backdrop .formContainer .questions {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 20;
+  grid-column: 3 / span 20;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 8;
+  grid-row: 3 / span 8;
+  background-color: white;
+}
+/*# sourceMappingURL=Contact.css.map */

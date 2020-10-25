@@ -1,0 +1,19 @@
+@import "../Constants.scss";
+.thumbnail {
+  background-color: $white;
+  display: flex;
+  height: 100%;
+
+  .thumnailImage {
+    width: 33%;
+    background-color: white;
+  }
+  .divider {
+    @include divider();
+    
+  }
+  .thumnbailDescription {
+    width: 66%;
+    background-color: $red;
+  }
+}

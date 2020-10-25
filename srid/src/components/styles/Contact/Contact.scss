@@ -1,0 +1,68 @@
+@import "../Constants.scss";
+
+.contactSection {
+  background-color: $white;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2rem repeat(12, 1fr 1rem);
+  grid-template-rows: repeat(6, 1fr 1rem);
+  .backdrop {
+    background-color: $red;
+    grid-row: 3 / span 7;
+    grid-column: 4 / span 19;
+    display: flex;
+    .containerLinks {
+      background-color: white;
+      height: 100%;
+      width: 33%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        a {
+          background-color: teal;
+          text-emphasis: none;
+          width: 50%;
+          padding: 1rem 0;
+          margin: 1rem 0;
+          font-size: 1.5rem;
+          text-align: center;
+        }
+        .github {
+          background-color: rgb(36, 35, 35);
+          color: white;
+        }
+        .linkedin {
+          background-color: $blue;
+          color: white;
+        }
+        .instagram {
+          background-color: #c13584;
+          color: white;
+        }
+      }
+    }
+
+    .divider {
+        height: 100%;
+      @include divider();
+    }
+    .formContainer {
+        display: grid;
+        background-color: $darkBlue;
+        width: 66%;
+        grid-template-columns: repeat(12, 1fr 1rem);
+        grid-template-rows: repeat(6, 1fr 1rem);
+        .questions {
+            grid-column: 3 / span 20;
+            grid-row: 3 / span 8;
+            background-color: white;
+          }
+    }
+    
+  }
+}

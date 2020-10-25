@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+.navBarContainer {
+  font-family: "Roboto", sans-serif;
+
+  font-size: 16px;
+  grid-column: 4 / span 6;
+  grid-row: 2 / span 2;
+
+  .linkContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr 1rem);
+    grid-template-rows: 100%;
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.5em;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .aboutLink {
+        grid-column: 1 /span 2;
+        justify-self: end;
+        
+    }
+    .projectsLink{
+        grid-column: 3 /span 2;
+        justify-self: end;
+        
+    }
+    .contactLink {
+        grid-column: 5 /span 2;
+        justify-self: end;
+        
+        
+    }
+
+  }
+}

@@ -2,28 +2,36 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 //importing custom components
-import NavBar from "./components/NavBar";
+// import NavBar from "./components/NavBar";
 import ErrorComponent from "./components/ErrorComponent";
 import About from "./components/About";
 import ProjectsPage from "./components/ProjectsPage";
+import Contact from "./components/Contact";
+import NavBar from "./components/NavBar";
 
 //importing css
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <Switch>
+      
+      <About />
+      <ProjectsPage />
+      <Contact />
+      {/* <Switch>
         <Route exact path="/">
-          <About />
+          
         </Route>
         <Route exact path="/projects">
-          <ProjectsPage />
+          
+        </Route>
+        <Route exact path="/contact">
+          
         </Route>
         <Route>
           <ErrorComponent />
         </Route>
-      </Switch>
+      </Switch> */}
     </div>
   );
 }
@@ -40,6 +48,13 @@ export default App;
  *      about paragraph and mission
  *      contact info
  *      links to other websites
- * 
- * Eventually:
+ *
+ * Eventually: I want this app to
+ *  Host multiple portfolios of multiple users
+ *  Connect to a database
+ *  Have authentication
+ *  Have great CSS
+ *  Have a contact form
+ *  Donation Form with stripe
+ *  Use .env to hide api key for mongoDB
  */
