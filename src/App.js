@@ -7,16 +7,20 @@ import PersonalCard from "./components/PersonaCard";
 function App() {
   const TitleDiv = tw.div`w-full h-1/3 flex flex-col p-8 justify-center `;
   const Title = tw.h1`text-7xl mb-1`;
-  const Description = tw.p`text-2xl m-1 pl-1`;
-  const ProjectsDiv = tw.div`w-full flex flex-col p-8 justify-center bg-red-500`;
+  const Description = tw.p`text-2xl m-1 my-2`;
+  const ProjectsDiv = tw.div`w-full flex flex-col p-8 justify-center `;
   const ProjectsTitle = tw.h1`text-5xl mb-1 `;
   const ProjectsContainer = tw.div``;
-  const ProjectThumbnail = tw.div`shadow rounded p-4 my-5`;
-  const ProjectPicture = tw.div``;
-  const ProjectName = tw.div``;
-  const SubTitle = tw.div`text-4xl font-bold border-solid border-t-2 border-black inline-block mt-2`;
+  const ProjectInfo = tw.div`p-3`;
+  const ProjectPicture = tw.div`w-full rounded-t h-48 bg-gray-100`;
+  const Project = tw.div`shadow rounded my-5`;
+  const SubTitle = tw.div`text-4xl font-bold border-solid border-t-2 border-black inline-block my-2 `;
+  const NavBar = tw.div``;
+  const Logo = tw.div``;
+
   return (
     <div tw="h-screen ">
+      <NavBar></NavBar>
       <TitleDiv>
         <Title>Julian Q</Title>
         <Description>Full Stack Engineer</Description>
@@ -24,21 +28,27 @@ function App() {
       <ProjectsDiv>
         <ProjectsTitle>Projects</ProjectsTitle>
         <ProjectsContainer>
-          <ProjectThumbnail>
+          <Project>
             <ProjectPicture>image</ProjectPicture>
-            <SubTitle>Harmony</SubTitle>
-            <Description>Social media App</Description>
-          </ProjectThumbnail>
-          <ProjectThumbnail>
+            <ProjectInfo>
+              <SubTitle>Harmony</SubTitle>
+              <Description>Social media App</Description>
+            </ProjectInfo>
+          </Project>
+          <Project>
             <ProjectPicture>image</ProjectPicture>
-            <SubTitle>Harmony</SubTitle>
-            <Description>Social media App</Description>
-          </ProjectThumbnail>
-          <ProjectThumbnail>
+            <ProjectInfo>
+              <SubTitle>Harmony</SubTitle>
+              <Description>Social media App</Description>
+            </ProjectInfo>
+          </Project>
+          <Project>
             <ProjectPicture>image</ProjectPicture>
-            <SubTitle>Harmony</SubTitle>
-            <Description>Social media App</Description>
-          </ProjectThumbnail>
+            <ProjectInfo>
+              <SubTitle>Harmony</SubTitle>
+              <Description>Social media App</Description>
+            </ProjectInfo>
+          </Project>
         </ProjectsContainer>
       </ProjectsDiv>
     </div>
