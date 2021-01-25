@@ -8,7 +8,7 @@ function HamburgerIcon() {
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
-      tw="w-12"
+      tw="w-12 "
     >
       <path
         strokeLinecap="round"

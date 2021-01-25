@@ -3,6 +3,7 @@ module.exports = {
     extend: {
       fontFamily: {
         script: ["Dancing Script", "cursive"],
+        open: ["Open Sans", "sans-serif"],
       },
     },
   },
