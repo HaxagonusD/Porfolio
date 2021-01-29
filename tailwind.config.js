@@ -4,6 +4,7 @@ module.exports = {
       fontFamily: {
         script: ["Dancing Script", "cursive"],
         open: ["Open Sans", "sans-serif"],
+        nunito: ["Nunito Sans"],
       },
     },
   },

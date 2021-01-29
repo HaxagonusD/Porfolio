@@ -6,7 +6,7 @@ import { GlobalStyles } from "twin.macro";
 import "semantic-ui-css/semantic.min.css";
 const dancingScript = require("typeface-dancing-script");
 const openSans = require("typeface-open-sans");
-
+const NunitoSans = require("typeface-nunito-sans");
 ReactDOM.render(
   <React.StrictMode>
     <GlobalStyles />
